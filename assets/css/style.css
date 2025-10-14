@@ -31,12 +31,22 @@ a {
 }
 
 header {
+    display: flex;
     padding: 2em;
     display: flex;
     align-items: center;
     justify-content: right;
 
 }
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+
 
 header a {
     margin-right: 2em;
