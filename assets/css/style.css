@@ -1,3 +1,4 @@
+/* === FONTS === */
 @font-face {
     font-family: 'Roboto Regular';
     src: url(../fonts/Roboto-Regular.ttf);
@@ -12,6 +13,10 @@
     font-family: 'Roboto Semibold';
     src: url(../fonts/Roboto-SemiBold.ttf);
 }
+
+
+
+
 
 html,
 body {
@@ -28,64 +33,68 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-header {
-    display: flex;
-    padding: 2em;
+
+
+
+
+
+
+
+#header {
     display: flex;
     align-items: center;
-    justify-content: right;
-
+    justify-content: flex-end;
+    padding: 2em;
 }
 
-header ul {
+#header .header__list {
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-header a {
+#header .header__item {
     margin-right: 2em;
-    color: black;
-
 }
 
-header img {
+#header .header__link {
+    color: black;
+}
+
+
+
+
+
+
+
+#header .header__profile-img {
     width: 50px;
     height: 50px;
     border-radius: 100%;
 }
 
-main {
+#main {
     display: flex;
-    text-align: center;
-    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    flex: 1;
 }
 
-main a {
-    display: inline-block;
-    margin: 0 0.5em;
-    background-color: #E0E1E5;
-    padding: 1em 4em;
-    border-radius: 0.5em;
-    color: black;
-    font-size: 1rem
-}
-
-main img {
+#main .main__logo {
     display: block;
     margin: 0 auto 2em auto;
     max-width: 20%;
 }
 
-form {
+.search {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -94,38 +103,42 @@ form {
     justify-content: center;
 }
 
-
-form input[type="submit"] {
-    border: solid 1px #E0E1E5;
-    border-radius: 1em;
-    padding: 1em 2em;
-    background-color: #f3f3f3;
-}
-
-
-form input[type="text"] {
+.search__input {
     border: solid 1px #E0E1E5;
     border-radius: 5em;
     padding: 1.5em;
     margin-bottom: 2em;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
-footer {
-    width: 100%;
+.search__buttons {
     display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-footer a {
-    font-family: 'Roboto Semibold', sans-serif;
-    color: black;
-    margin: 2em;
+.search__button {
+    border: solid 1px #E0E1E5;
+    border-radius: 1em;
+    padding: 1em 2em;
+    background-color: #f3f3f3;
+    cursor: pointer;
 }
 
 
-footer ul {
+
+
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#footer .footer__list {
     padding: 0;
     width: 100%;
     display: flex;
@@ -133,4 +146,11 @@ footer ul {
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
+    margin: 0;
+}
+
+#footer .footer__link {
+    font-family: 'Roboto Semibold', sans-serif;
+    color: black;
+    margin: 2em;
 }
